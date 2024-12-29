@@ -30,9 +30,12 @@ def gen_train_stl(data, timeunites, pastunites):
     elif data=='unusual':
         return ("always", (0, 4), ("or", ("neg", ("mu", 0, 499.99)), ("always", (1, 9), ("mu", 1, 9))))
     elif data=='consecutive':
-        return ("always", (0, timeunites-1), ("and", ("neg", ("mu", 0, 100)),  ("neg", ("mu", 1, 100))))        
+        return ("always", (0, timeunites-1), ("and", ("neg", ("mu", 0, 100)),  ("neg", ("mu", 1, 100))))      
+    elif data=='airpde':
+        return gen_airmulti_stl(timeunites, nvar=35, th=80)        
 
 def gen_airmulti_stl(timeunites, nvar=36, th=80):
+    #print(nvar)
     base0 = ("mu", 0, 0)
     base = ("and", ("mu", 1, -th), ("neg", ("mu", 1, th)))
     base = ("and", base0, base)
