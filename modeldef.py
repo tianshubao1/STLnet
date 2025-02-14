@@ -135,7 +135,7 @@ class RNNPredictor(nn.Module):
         
         
         if self.cell_type == 'pde':
-            adj_matrix = np.load('adj_matrix_beiijng.npy')           
+            adj_matrix = np.load('adj_matrix_beijing.npy')           
             outputs = self.pde_layer(outputs, speed, direction, adj_matrix)
             
         return outputs
@@ -247,11 +247,10 @@ class RNNPredictor(nn.Module):
             input_local = output
             outputs.append(output)
             
-        outputs = torch.stack(outputs, 1)   #torch.Size([128, 19, 35])
-        #print(outputs.size())   
-        
+        outputs = torch.stack(outputs, 1)   #torch.Size([128, 19, 35])   
+        #print(outputs.size()) #torch.Size([128, 19, 35])
         if self.cell_type == 'pde':
-            adj_matrix = np.load('adj_matrix_beiijng.npy')           
+            adj_matrix = np.load('adj_matrix_beijing.npy')           
             outputs = self.pde_layer(outputs, speed, direction, adj_matrix)
             
         return outputs
