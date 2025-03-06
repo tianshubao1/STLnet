@@ -1,4 +1,4 @@
-STLNet
+Phy_STLNet
 
 ------------------------------------
 Requirements:
