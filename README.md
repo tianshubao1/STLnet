@@ -18,7 +18,7 @@ python main.py --data (air/cont) [--lr 0.001 --lambdao 10 --epochs 10]
 
 ------------------------------------
 
-The old baselines may not be supportable in the new model. If you want to run the previous baseline, please check https://github.com/meiyima/STLnet
+The old baselines may not be supportable in the new model. If you want to run the previous baselines, please check https://github.com/meiyima/STLnet
 
 ------------------------------------
 
