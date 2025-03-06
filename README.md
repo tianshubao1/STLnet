@@ -18,7 +18,7 @@ python main.py --timeunites 24 --data airpde2 --cell_type pde --lr 0.1 --lambdao
 
 ------------------------------------
 
-The old command was not supportable in the new model. If you want to run the previous baseline, please check https://github.com/meiyima/STLnet
+The old baselines may not be supportable in the new model. If you want to run the previous baseline, please check https://github.com/meiyima/STLnet
 
 ------------------------------------
 
