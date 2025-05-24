@@ -16,7 +16,7 @@ python main.py --data (air/cont) [--lr 0.001 --lambdao 10 --epochs 10]
 
 ```python main.py --timeunites 12 --data trfpde1 --cell_type lstm --lr 0.01 --lambdao 0 --epochs 10``` 
 
-```python main.py --timeunites 12 --data trfpde1 --cell_type transformer --lr 0.01 --lambdao 0 --epochs 10``` 
+```python main.py --timeunites 12 --data trfpde1 --cell_type transformer --lr 0.002 --lambdao 0 --epochs 10``` 
 
 ```python main.py --timeunites 12 --data trfpde1 --cell_type pde --lr 0.01 --lambdao 0 --epochs 10``` 
 
